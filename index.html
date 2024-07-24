@@ -46,7 +46,35 @@
         <img src="assets/img/logo.png" alt="">
         <h1 class="sitename">Ubay Bin Ka'ab</h1>
       </a>
-
+      <style>
+        .navmenu {
+          display: flex;
+          flex-direction: column;
+        }
+    
+        .navmenu ul {
+          display: none;
+        }
+    
+        .navmenu ul.show {
+          display: block;
+        }
+    
+        .mobile-nav-toggle {
+          display: block;
+          cursor: pointer;
+        }
+    
+        @media (min-width: 992px) {
+          .mobile-nav-toggle {
+            display: none;
+          }
+    
+          .navmenu ul {
+            display: flex;
+          }
+        }
+      </style>
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home<br></a></li>
