@@ -240,7 +240,7 @@ h6 {
 
 .header .logo h1 {
   font-weight: 700;
-  font-size: ;
+  font-size: 30px;
   margin: 0;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -251,7 +251,7 @@ h6 {
 .header .btn-getstarted:focus {
   color: var(--contrast-color);
   background: var(--accent-color);
-  font-size: 14px;
+  font-size: 10px;
   padding: 8px 25px;
   margin: 0 0 0 30px;
   border-radius: 50px;
