@@ -46,7 +46,35 @@
         <img src="assets/img/logo.png" alt="">
         <h1 class="sitename">Ubay Bin Ka'ab</h1>
       </a>
-
+      <style>
+        .navmenu {
+          display: flex;
+          flex-direction: column;
+        }
+    
+        .navmenu ul {
+          display: none;
+        }
+    
+        .navmenu ul.show {
+          display: block;
+        }
+    
+        .mobile-nav-toggle {
+          display: block;
+          cursor: pointer;
+        }
+    
+        @media (min-width: 992px) {
+          .mobile-nav-toggle {
+            display: none;
+          }
+    
+          .navmenu ul {
+            display: flex;
+          }
+        }
+      </style>
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home<br></a></li>
@@ -58,7 +86,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="https://docs.google.com/forms/d/e/1FAIpQLSed3wZmFlW8MU7mp_a-z0YWVZ46veER9QPTY3tZN7kMwXe4ZQ/viewform?usp=sf_link">Daftar Sekarang</a>
+      <a class="btn-getstarted" href="contact.html">Hubungi Kami</a>
 
     </div>
   </header>
@@ -253,6 +281,16 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      const navMenu = document.querySelector('.navmenu ul');
+  
+      mobileNavToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('show');
+      });
+    });
+  </script>  
   <script src="assets/js/main.js"></script>
 
 </body>
