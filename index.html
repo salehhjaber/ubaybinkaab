@@ -253,6 +253,16 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+      const navMenu = document.querySelector('.navmenu ul');
+  
+      mobileNavToggle.addEventListener('click', function () {
+        navMenu.classList.toggle('show');
+      });
+    });
+  </script>  
   <script src="assets/js/main.js"></script>
 
 </body>
