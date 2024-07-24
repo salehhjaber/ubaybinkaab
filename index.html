@@ -46,35 +46,7 @@
         <img src="assets/img/logo.png" alt="">
         <h1 class="sitename">Ubay Bin Ka'ab</h1>
       </a>
-      <style>
-        .navmenu {
-          display: flex;
-          flex-direction: column;
-        }
-    
-        .navmenu ul {
-          display: none;
-        }
-    
-        .navmenu ul.show {
-          display: block;
-        }
-    
-        .mobile-nav-toggle {
-          display: block;
-          cursor: pointer;
-        }
-    
-        @media (min-width: 992px) {
-          .mobile-nav-toggle {
-            display: none;
-          }
-    
-          .navmenu ul {
-            display: flex;
-          }
-        }
-      </style>
+
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home<br></a></li>
@@ -281,16 +253,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Main JS File -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
-      const navMenu = document.querySelector('.navmenu ul');
-  
-      mobileNavToggle.addEventListener('click', function () {
-        navMenu.classList.toggle('show');
-      });
-    });
-  </script>  
   <script src="assets/js/main.js"></script>
 
 </body>
